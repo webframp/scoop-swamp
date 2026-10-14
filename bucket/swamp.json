@@ -11,13 +11,18 @@
     },
     "bin": "swamp.exe",
     "checkver": {
-        "github": "https://github.com/swamp-club/swamp",
-        "regex": "/releases/tag/v([\\d.]+-sha\\.[0-9a-f]+)"
+        "url": "https://api.github.com/repos/swamp-club/swamp/releases/latest",
+        "jsonpath": "$.tag_name",
+        "regex": "v(.+)"
     },
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://github.com/swamp-club/swamp/releases/download/v$version/swamp-windows-x86_64.zip"
+                "url": "https://github.com/swamp-club/swamp/releases/download/v$version/swamp-windows-x86_64.zip",
+                "hash": {
+                    "url": "https://github.com/swamp-club/swamp/releases/download/v$version/checksums.txt",
+                    "regex": "$sha256\\s+swamp-windows-x86_64\\.zip"
+                }
             }
         }
     }
