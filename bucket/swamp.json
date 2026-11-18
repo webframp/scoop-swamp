@@ -1,12 +1,12 @@
 {
-    "version": "20261118.034734.0-sha.dcaf9157",
+    "version": "20261118.201538.0-sha.67a843db",
     "description": "Deterministic automation for AI agents: a CLI for reviewable, shareable operational workflows",
     "homepage": "https://github.com/swamp-club/swamp",
     "license": "AGPL-3.0-only",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/swamp-club/swamp/releases/download/v20261118.034734.0-sha.dcaf9157/swamp-windows-x86_64.zip",
-            "hash": "fc3c8b46d094183dcd127a56fb0d11838152dc2f8d4be26131a9af4edf824d69"
+            "url": "https://github.com/swamp-club/swamp/releases/download/v20261118.201538.0-sha.67a843db/swamp-windows-x86_64.zip",
+            "hash": "1448b495597a4995c408232d4330543981c8e23e8824b5c0b46b35521cb42b96"
         }
     },
     "bin": "swamp.exe",
